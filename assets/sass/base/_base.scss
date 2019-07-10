@@ -1,0 +1,43 @@
+body {
+  height: 100vh;
+  background-color: $white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.main-section {
+  background-color: $jelly-bean;
+  height: 500px;
+  text-align: center;
+  color: $white;
+  padding-top: 200px;
+
+
+   &__titulo {
+    font-size: $x-large;
+   }
+
+   &__titulo--bold {
+      font-size: $x-large;
+      font-weight: $bold;
+     }
+}
+
+.producto {
+  text-align: center;
+  padding: 2em 0;
+
+  &--gray-bg {
+    @extend .producto;
+    background-color: gray;
+    color: white;
+  }
+
+  &__imagen {
+    max-width: 100%;
+  }
+
+}
